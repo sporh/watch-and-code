@@ -12,11 +12,20 @@
 
     console.log(todos);
 
-    todos.push('Item 4');
+    function add(myAdd) {
+      todos.push(myAdd);
+      console.log(todos);
+    }
 
-    todos[0] = 'Item 1 updated';
+    function edit(position, newValue) {
+      todos[position] = newValue;
+      console.log(todos);
+    }
 
-    todos.splice(0, 4);
+
+
+
+    todos.splice(0, 1);
 
   </script>
 </body>
