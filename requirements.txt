@@ -1,7 +1,7 @@
 Version 2
 [x] It should have a function to add a todo
 [x] It should have a function to edit a todo 
-[] It should have a function to remove a todo
+[x] It should have a function to remove a todo
 
 Version 1
 [x] - It should have a way to store todos
