@@ -8,15 +8,20 @@
 
 <body>
   <script>
+    // Need to rewrite this to use objects rather than strings
     var todos = ['Item 1', 'Item2', 'Item 3'];
 
     console.log(todos);
 
+    // Rewrite so the argument passed in is saved
+    // to a property on an object
     function add(myAdd) {
       todos.push(myAdd);
       console.log(todos);
     }
 
+    // Rewrite so that second argument is saved to
+    // property on object at 'position'.
     function edit(position, newValue) {
       todos[position] = newValue;
       console.log(todos);
