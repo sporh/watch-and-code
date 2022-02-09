@@ -8,24 +8,26 @@
 
 <body>
   <script>
-    // Need to rewrite this to use objects rather than strings
-    var todos = ['Item 1', 'Item2', 'Item 3'];
+
+    var todos = [
+      { todoText: 'Item 1', completed: false },
+      { todoText: 'Item 2', completed: false },
+      { todoText: 'Item 3', completed: false }
+    ];
 
     console.log(todos);
 
-    // Rewrite so the argument passed in is saved
-    // to a property on an object
-    function add(myAdd) {
-      todos.push(myAdd);
+    function add(initialTodoText) {
+      todos.push({ todoText: initialTodoText, completed: false });
       console.log(todos);
     }
 
-    // Rewrite so that second argument is saved to
-    // property on object at 'position'.
-    function edit(position, newValue) {
-      todos[position] = newValue;
+
+    function edit(position, newTodoText) {
+      todos[position].todoText = newTodoText;
       console.log(todos);
     }
+
 
     function remove(position) {
       todos.splice(position, 1);
