@@ -34,7 +34,15 @@
       console.log(todos);
     }
 
+    function toggle(position) {
+      if (todos[position].completed === false) {
+        todos[position].completed = true;
+      } else {
+        todos[position].completed = false;
+      }
 
+      console.log(todos);
+    }
 
   </script>
 </body>
