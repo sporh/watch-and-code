@@ -35,10 +35,10 @@
     }
 
     function toggle(position) {
-      if (todos[position].completed === false) {
-        todos[position].completed = true;
-      } else {
+      if (todos[position].completed === true) {
         todos[position].completed = false;
+      } else {
+        todos[position].completed = true;
       }
 
       displayTodos();
@@ -48,8 +48,32 @@
       for (var i = 0; i < todos.length; i++) {
         console.log(todos[i]);
       }
+    }
 
-    };
+
+    function toogleAll() {
+      var completedTodos = 0;
+
+      for (var i = 0; i < todos.length; i++) {
+        if (todos[i].completed === true) {
+          completedTodos++;
+        }
+      }
+
+      if (completedTodos === todos.length) {
+        for (var i = 0; i < todos.length; i++) {
+          todos[i].completed = false;
+        }
+      }
+      displayTodos();
+    }
+
+      // if: everything is true
+      // change everything to false
+      //else
+      // change everything to true
+
+
 
 
 
