@@ -1,7 +1,6 @@
 Version 5
-[] A function to display todos.
-[] displayTodos should show the todoText property.
-[] displayTodos should show the completed property.
+[x] A function to display todos.
+[x] displayTodos should show the todoText and completed properties.
 
 
 Version 4
