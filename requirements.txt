@@ -1,8 +1,8 @@
 Version 6
 [x] It should have a function to toggle all todos.
 [x] If everything is true ==> change everything to false.
-[] If everything is false ==> change everything to ture.
-[] If mixed ==> change everything to true.
+[x] If everything is false ==> change everything to ture.
+[x] If mixed ==> change everything to true.
 
 
 Version 5
