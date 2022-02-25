@@ -7,7 +7,7 @@
 </head>
 
 <body>
-  <button>Display todos</button>
+  <button id="display-todos-button">Display todos</button>
   <script>
 
     var todos = [
@@ -74,13 +74,13 @@
       displayTodos();
     }
 
-      // if: everything is true
-      // change everything to false
-      //else
-      // change everything to true
+    // if: everything is true
+    // change everything to false
+    //else
+    // change everything to true
 
-
-
+    var displayTodosButton = document.getElementById('display-todos-button');
+    displayTodosButton.addEventListener('click', displayTodos);
 
 
   </script>

@@ -1,6 +1,6 @@
 Version 7
 [x] It should have a displaysTodos button.
-[] The displayTodos button should riun the displaysTodos function.
+[x] The displayTodos button should run the displaysTodos function.
 
 Version 6
 [x] It should have a function to toggle all todos.
