@@ -9,6 +9,9 @@
 <body>
   <button id="display-todos-button">Display todos</button>
   <button id="toggle-all-button">Toggle all</button>
+  <button id="add-button">Add</button>
+  <input id="add-input">
+
   <script>
 
     var todos = [
@@ -19,8 +22,10 @@
 
     displayTodos()
 
-    function add(initialTodoText) {
+    function add() {
+      var initialTodoText = addInput.value;
       todos.push({ todoText: initialTodoText, completed: false });
+      addInput.value = '';
       displayTodos();
     }
 
@@ -75,17 +80,15 @@
       displayTodos();
     }
 
-    // if: everything is true
-    // change everything to false
-    //else
-    // change everything to true
-
     var displayTodosButton = document.getElementById('display-todos-button');
     displayTodosButton.addEventListener('click', displayTodos);
 
     var toggleAllButton = document.getElementById('toggle-all-button');
     toggleAllButton.addEventListener('click', toggleAll);
 
+    var addButton = document.getElementById('add-button');
+    var addInput = document.getElementById('add-input');
+    addButton.addEventListener('click', add);
 
   </script>
 </body>
