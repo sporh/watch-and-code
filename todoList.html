@@ -20,6 +20,9 @@
   <input id="toggle-input">
 
 
+  <ul id="todos-ul">
+  </ul>
+
 
 
   <script>
@@ -71,7 +74,18 @@
       for (var i = 0; i < todos.length; i++) {
         console.log(todos[i]);
       }
+      var todosUl = document.getElementById('todos-ul');
+
+      todosUl.innerHTML = '';
+
+      for (var i = 0; i < todos.length; i++) {
+        var todoLi = document.createElement('li');
+        todosUl.appendChild(todoLi);
+
+      }
     }
+
+
 
 
     function toggleAll() {
