@@ -71,21 +71,20 @@
     }
 
     function displayTodos() {
-      for (var i = 0; i < todos.length; i++) {
-        console.log(todos[i]);
-      }
       var todosUl = document.getElementById('todos-ul');
-
       todosUl.innerHTML = '';
 
       for (var i = 0; i < todos.length; i++) {
         var todoLi = document.createElement('li');
-        todosUl.appendChild(todoLi);
 
+        if (todos[i].completed === true) {
+          todoLi.innerText = '[X] ' + todos[i].todoText;
+        } else {
+          todoLi.innerText = '[ ] ' + todos[i].todoText;
+        }
+        todosUl.appendChild(todoLi);
       }
     }
-
-
 
 
     function toggleAll() {
